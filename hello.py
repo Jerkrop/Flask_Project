@@ -4,7 +4,7 @@ pswrd = 'welcome1'
 app = Flask(__name__)
 userpass = [['admin','password']]
 
-@app.route('/welcom/<name>')
+@app.route('/welcome/<name>')
 def welcome(name):
     return render_template('welcome.html', name=name)
 
@@ -25,14 +25,6 @@ def login():
             return redirect(url_for('welcome',name = user))
         else:
             return redirect(url_for('error',errType='Incorect Password'))
-
-    # else:
-    #     user = request.args.get('nm')
-    #     userpassed = request.args.get('pw')
-    #     if [user,userpassed] in userpass:
-    #         return redirect(url_for('welcome',name = user))
-    #     else:
-    #         return redirect(url_for('error', errType ='incorrect password'))
 
 @app.route('/register')
 def regi():
