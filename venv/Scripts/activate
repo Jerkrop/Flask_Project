@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\barre\OneDrive\Desktop\CSET\new flask\venv"
+VIRTUAL_ENV="D:\Flask_GroupProject\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

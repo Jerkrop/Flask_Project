@@ -1,4 +1,5 @@
 from flask import Flask,render_template,request,redirect,url_for
+
 username = 'admin'
 pswrd = 'welcome1'
 app = Flask(__name__)
