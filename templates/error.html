@@ -1,1 +1,11 @@
-<p>error</p>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    </head>
+    <body>
+        <form>
+            <p>Error: {{errType}}</p>
+            <p>Please try again.</p>
+        </form>
+    </body>
+</html>
