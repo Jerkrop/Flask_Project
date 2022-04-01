@@ -4,14 +4,6 @@ from flask import Flask,render_template,request,redirect,url_for
 # pip install Flask psycopg2-binary
 import Database
 
-def get_all_toys():
-  conn = connect()
-  cur = conn.cursor()
-  cur.execute("SELECT * FROM toys")
-  toys = cur.fetchall()
-  cur.close()
-  conn.close()
-  return toys
 
 username = 'admin'
 pswrd = 'welcome1'
