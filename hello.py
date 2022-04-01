@@ -59,8 +59,7 @@ def registerz():
     if request.method == 'POST':
         user = request.form['unr']
         pass1 = request.form['pwr']
-        if[user,pass1] not in userpass:
-            userpass.append([user,pass1])
+        if[user,pass1]:
             return redirect(url_for('login'))
         else:
             return redirect(url_for('error',errType='Account already exists'))
