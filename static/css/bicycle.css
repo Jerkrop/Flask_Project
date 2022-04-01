@@ -135,3 +135,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.descrip{
+    color: white
+}
